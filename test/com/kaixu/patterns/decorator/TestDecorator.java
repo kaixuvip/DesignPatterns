@@ -1,3 +1,4 @@
+package com.kaixu.patterns.decorator;
 import org.junit.Test;
 
 import com.kaixu.patterns.decorator.Shap;
