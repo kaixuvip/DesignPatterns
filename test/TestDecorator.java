@@ -1,14 +1,16 @@
-import static org.junit.Assert.*;
-
 import org.junit.Test;
 
+import com.kaixu.patterns.decorator.Shap;
 import com.kaixu.patterns.decorator.imp.Circle;
+import com.kaixu.patterns.decorator.imp.RedDecorator;
 
 public class TestDecorator {
 
 	@Test
 	public void test() {
-		Circle circle = new Circle();
+		Shap circle = new Circle();
+		Shap redCircle = new RedDecorator(circle);
+		redCircle.Draw();
 	}
 
 }
